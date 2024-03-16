@@ -1,0 +1,19 @@
+<form [formGroup]="cardForm" (submit)="ngOnSubmit()">
+    <div>
+        <label for="cardName">Nom de la carte bleue:</label>
+        <input type="text" id="cardName" formControlName="name">
+    </div>
+    <div>
+        <label for="cardNumber">Numéro de carte:</label>
+        <input type="text" id="cardNumber" formControlName="number">
+    </div>
+    <div>
+        <label for="expirationDate">Date d'expiration:</label>
+        <input type="month" id="expirationDate" formControlName="expirationDate">
+    </div>
+    <div>
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" formControlName="cvv">
+    </div>
+    <button type="submit">Valider</button>
+</form>

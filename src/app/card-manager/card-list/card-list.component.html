@@ -1,0 +1,13 @@
+<div>
+    <div>
+        <input type="text" [(ngModel)]="searchText" placeholder="Search cards">
+        <div *ngFor="let card of cards | searchName: searchText">
+            <div>
+                <p>{{ card.name }}</p>
+                <p>{{ card.number }}</p>
+                <p>{{ card.expirationDate }}</p>
+                <p>{{ card.cvv }}</p>
+            </div>
+        </div>
+    </div>
+</div>
